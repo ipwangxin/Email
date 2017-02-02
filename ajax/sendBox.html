@@ -1,0 +1,23 @@
+<div class="Inbox">
+    <table class="table table-hover table-response">
+        <tr class="first">
+            <th><input type="checkbox" ng-click="checkall()" ng-model="all"></th>
+            <th class="from">收件人</th>
+            <th class="theme">主题</th>
+            <th class="date">时间</th>
+        </tr>
+        <tr ng-repeat="x in infos" ng-if="$index>=(active-1)*maxnum && $index<active*maxnum" ng-click="href($index)">
+            <td><input type="checkbox" ng-model="x.check" ng-click="checkone($event)"></td>
+            <td class="from">{{x.from}}</td>
+            <td class="theme layui-elip">{{x.theme}} <span class="hidespan">   {{'　　　' + x.content | limitTo:20 }}</span></td>
+            <td class="date"><span class="hidespan">{{x.date | date:'MM-dd' + "　 "}}</span>{{x.date | date:'HH:mm:ss'}}    </td>
+        </tr>
+    </table>
+    <nav>
+        <ul class="pagination pagination-lg">
+            <li ng-class="{disabled:!(active-1)}"><a href="#/sendbox/" ng-click="last()" >&laquo;</a></li>
+            <li ng-repeat="x in arr" ng-if="$index>0" ng-click="act($index)" ng-class="{active:!(active-x)}"><a href="#/">{{x}}</a></li>
+            <li ng-class="{disabled:!(active-pages)}"><a ng-click="next()" href="#/sendbox/">&raquo;</a></li>
+        </ul>
+    </nav>
+</div>

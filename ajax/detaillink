@@ -1,0 +1,11 @@
+<div class='allscreen'>
+    <div class='content'>
+        <ul class="list-group">
+            <li class="list-group-item">姓名:{{data.name}}</li>
+            <li class="list-group-item">住址:{{data.address}}</li>
+            <li class="list-group-item">邮箱:{{data.emailaddress}}</li>
+            <li class="list-group-item">电话号码:{{data.phonenumber}}</li>
+        </ul>
+        <p><a href="#/new/{{data.id}}" class="btn btn-primary layui-btn-big" ng-click="write()">写信</a>　　　<a href="#" class="btn btn-primary layui-btn-big" ng-click="close()">关闭</a></p>
+    </div>
+</div>

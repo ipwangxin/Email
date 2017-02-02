@@ -1,0 +1,21 @@
+<div class="linksbox">
+    <table class="table table-hover text-center">
+        <tr>
+                <th class="text-center">姓名</th>
+                <th class="text-center">邮箱</th>
+                <th class="text-center">发邮件</th>
+        </tr>
+        <tr ng-repeat="x in infos" ng-if="$index>=(active-1)*maxnum && $index<active*maxnum" ng-click="linkdetails($index)">
+            <td>{{x.name}}</td>
+            <td>{{x.emailaddress}}</td>
+            <td><a href="#/new/{{x.id}}"><span class="glyphicon glyphicon-plus" ng-click="sendANew()"></span></a></td>
+        </tr>
+    </table>
+    <nav>
+        <ul class="pagination pagination-lg">
+            <li ng-class="{disabled:!(active-1)}"><a href="#/links" ng-click="last()" >&laquo;</a></li>
+            <li ng-repeat="x in arr" ng-if="$index>0" ng-click="act($index)" ng-class="{active:!(active-x)}"><a href="#/links/">{{x}}</a></li>
+            <li ng-class="{disabled:!(active-pages)}"><a ng-click="next()" href="#/links/">&raquo;</a></li>
+        </ul>
+    </nav>
+</div>

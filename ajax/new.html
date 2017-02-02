@@ -1,0 +1,39 @@
+<div class="new">
+    <form role="form">
+        <div class="form-group fa-rel">
+            <label for="inputsendMan">发件人</label>
+            <input type="email" class="form-control" id="inputsendMan" placeholder="Email" value="ipwangxin@sina.com">
+            <span ng-click="secretclick()" class="sec">{{secret.str}}</span><span ng-click="copyclick()" class="cop">{{copy.str}}</span>
+        </div>
+        <div class="form-group">
+            <label for="inputsendMan">收件人</label>
+                <input type="email" class="form-control" id="inputrecived" placeholder="收件人" ng-model="recive.emailaddress">
+        </div>
+        <div class="form-group" ng-hide="copy.blo">
+            <label for="copySend">抄送</label>
+            <input type="password" class="form-control" id="copySend" placeholder="抄送">
+        </div>
+        <div class="form-group" ng-hide="secret.blo">
+            <label for="inputsecret">密送</label>
+            <input type="text" class="form-control" id="inputsecret" placeholder="密送">
+        </div>
+        <div class="form-group">
+            <label for="theme">主题</label>
+                <input type="text" class="form-control" id="theme" placeholder="theme">
+        </div>
+        <div class="form-group">
+            <label>内容</label>
+            <div class="layui-form-item layui-form-text">
+                <div class="layui-input-block">
+                    <textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="LAY_demo_editor"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block bgchange">
+                    <button class="layui-btn submitBtn" lay-submit="" lay-filter="demo1">发送</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重写</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

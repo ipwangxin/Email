@@ -1,0 +1,276 @@
+@media screen and (max-width:768px){
+    div.left{
+        background: #000;
+        left: -217px;
+        z-index: 100;
+    }
+    div.left.on{
+        left:0;
+    }
+    i.itext{
+        cursor: pointer;
+        display: block;
+    }
+    /*angularjs动画*/
+/*    .on.on-add,.on-remove{
+        transition: all 1s;
+    }
+    .on,on-add.on-add-active{
+        left:0px;
+    }
+    .on.on-remove.on-remove-active{
+        left: -217px;
+    }*/
+    .hidespan{
+        display: none;
+    }
+    .container-fluid>h2{
+        text-indent: 0;
+    }
+    div.right{
+        width:100%;
+        margin-left: 0;
+        border: none;
+        padding: 2px;
+    }
+    div.wrap-box{
+        padding:5px;
+    }
+}
+
+@media screen and (max-width:980px){
+    h2.header2{
+        background-size: auto 100%;
+        font:60px/100px "Microsoft Himalaya";
+    }
+    .Inbox ul.top-ul li.first{
+        text-indent: 0;
+        font-size: 14px;
+    }
+    .Inbox ul.top-ul li a{
+        font-size: 14px;
+    }
+    .Inbox ul.top-ul li .date{
+        width:100px;
+    }
+    .Inbox li span.theme{
+        width:calc(75% - 100px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/*主页面样式*/
+body{
+    background-color: #272727;
+    color: #fff;
+}
+.header2{
+    background: url('../img/bj1.jpg') no-repeat;
+    background-position: center center;
+    background-size:100% auto ;
+    font:50px/120px "Microsoft New Tai Lue";
+    text-indent: .5em;
+    color:#fff;
+}
+.left{
+    width:200px;
+    min-height: 600px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border:8px solid #d9bf00;
+    border-radius: 10px;
+}
+.itext{
+    font-size: 30px;
+    color: #d9bf00;
+    position: absolute;
+    left:100%;
+    display: none;
+}
+.wrap-box{
+    position: relative;
+    margin-top: 10px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+.right{
+    margin-left: 220px;
+    border-left:1px solid #ccc;
+    box-sizing: border-box;
+    min-height: 620px;
+    padding:10px 30px;
+}
+
+/*导航部分*/
+.nav-ul li{
+    height: 40px;
+    margin-top: 5px;
+    text-indent: 1.5em;
+
+}
+.nav-ul .firstli{
+    text-indent: 0;
+    margin-top: 0;
+    border-bottom:2px solid #d7cca0;
+}
+.nav-ul .firstli a{
+    text-align: center;
+    border-bottom: none;
+    width:50%;
+    display: inline-block;
+    text-indent: 0;
+}
+.nav-ul li a{
+    display: inline-block;
+    width:140px;
+    font:20px/40px "songti";
+    color: #d9bf00;
+    border-bottom: 2px solid #d9bf00;
+}
+li.firstli a.borderl{
+    border-left: 2px solid #d9bf00;
+}
+
+/*INbox.html*/
+.Inbox{
+    line-height: 55px;
+}
+.Inbox .top-ul li{
+
+    height: 55px;
+    border:2px solid #ccc;
+    margin-bottom: 5px;
+    position: relative;
+}
+.Inbox .top-ul li.first{
+    border:none;
+    font:bold 18px/55px "songti";
+}
+.Inbox .top-ul li a{
+    color:#fff;
+    font:18px/53px "songti";
+}
+.Inbox .top-ul li a:hover span{
+    color:#d9bf00;
+}
+.Inbox .top-ul li a:hover{
+    text-decoration: none;
+}
+.Inbox li span{
+    display: inline-block;
+}
+.Inbox li .check{
+    width:5%;
+    position: relative;
+    top:-20px;
+}
+.Inbox li .from{
+    width:15%;
+}
+.Inbox li .theme{
+    width:calc(75% - 150px);
+
+}
+.Inbox li .date{
+    width:10%;
+    position: absolute;
+    right:0;
+    width:150px;
+    top:50%;
+    margin-top: -27px;
+}
+
+/*links*/
+.table{
+    border:1px solid #ccc;
+    font-size: 18px;
+}
+.table.table-hover td{
+    height: 50px;
+    line-height: 50px;
+}
+.table.table-hover tr:hover{
+    color: #d9bf00;
+
+}
+
+/*new*/
+.new label{
+    color: #d9bf00;
+}
+.fa-rel{
+    position: relative;
+}
+.sec,.cop{
+    position: absolute;
+    color: #d7cca0;
+    top:32px;
+}
+.sec:hover,.cop:hover{
+    color:#d9bf00;
+}
+.sec{
+    right:100px;
+}
+.cop{
+    right:20px;
+}
+div.layui-input-block{
+    border-radius: 10px;
+    margin-left: 0;
+    background: #fff;
+}
+.layui-input-block.bgchange{
+    background-color: inherit;
+}
+button.submitBtn{
+    background: #d9bf00;
+}
+
+
+/*details link*/
+
+.allscreen{
+    background: inherit;
+    color:#d9bf00;
+}
+.allscreen li{
+    line-height: 60px;
+    background: inherit;
+    color:#d9bf00;
+    text-indent: 2em;
+    font:bold 18px/55px "songti";
+}
+a.btn.btn-primary{
+    background: #d7cca0;
+    color:#fff;
+}
+a.btn.btn-primary:hover{
+    background: #d9bf00;
+}
+
+/*emailDetails*/
+.detailsemailbox li{
+    background: inherit;
+}
+.detailsemailbox .btn{
+    background: #d7cca0;
+
+}
+.detailsemailbox .btn:hover{
+    background: #d9bf00;
+}
+.detailsemailbox .cont{
+    min-height: 350px;
+}
+.rel{
+    position: relative;
+}
+p.pos{
+    position: absolute;
+    right:10px;
+    top:0;
+}

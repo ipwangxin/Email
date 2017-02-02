@@ -1,0 +1,35 @@
+<!--邮件详情页面-->
+<div class="detailsemailbox rel">
+    <!--按钮段落-->
+    <p class="btnwrap">
+        <button class="btn btn-primary btn-lg" >删除</button>
+        <a class="btn btn-primary btn-lg" href="#/new/{{data.id}}">{{replay}}</a>
+        <button class="btn btn-primary btn-lg" >标记</button>
+        <button class="btn btn-primary btn-lg" >移动</button>
+        <button class="btn btn-primary btn-lg" ng-click="lastemail()">上一封</button>
+        <button class="btn btn-primary btn-lg" ng-click="nextemail()">下一封</button>
+    </p>
+    <p class="pos" ng-hide="tipnghide">{{tip}}</p>
+    <ul class="list-group">
+        <li class="list-group-item">主题:{{data.theme}}</li>
+        <li class="list-group-item">发件人:{{data.from}}</li>
+        <li class="list-group-item">时间:{{data.date | date:'yyyy-MM-dd HH:mm:ss'}}</li>
+        <li class="list-group-item cont">详细内容:{{data.content}}</li>
+    </ul>
+    <!--按钮段落-->
+    <p class="btnwrap">
+        <button class="btn btn-primary btn-lg" >删除</button>
+        <a class="btn btn-primary btn-lg" href="#/new/{{data.id}}">{{replay}}</a>
+        <button class="btn btn-primary btn-lg">标记</button>
+        <button class="btn btn-primary btn-lg">移动</button>
+    </p>
+    <!--富文本框应用代码-->
+    <div class="form-group" ng-hide="replayquickblo">
+        <div class="layui-form-item layui-form-text">
+            <div class="layui-input-block" ng-click="rich()">
+                快速回复
+                <textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="LAY_demo_editor" ng-click="rich()"></textarea>
+            </div>
+        </div>
+    </div>
+</div>

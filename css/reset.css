@@ -1,0 +1,31 @@
+html,body,div,header,nav,section,footer,p,ul,li,h1,h2,h3,h4{
+    padding: 0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+body{
+    font-size: 14px;
+    line-height: 1.428;
+}
+ul,li{
+    list-style: none;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:left;
+}
+
+/*清浮动一*/
+.clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+.clearfix {
+    zoom:1;
+}

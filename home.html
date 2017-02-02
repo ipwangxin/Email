@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>邮箱首页</title>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+<body ng-app="myApp">
+    <div class="container-fluid rel">
+        <h2 class="header2">Golden Mail</h2>
+        <div class="wrap-box hidden-xs-*">
+            <div class="left" ng-controller="myCtrl" ng-class="{on:onblo}" ng-click="itext($event)">
+                <i class="layui-icon itext" ng-click="itext($event)">&#xe623;</i>
+                <ul class="nav-ul">
+                    <li class="firstli"><a href="#/new/0" class="addmess">写信</a><a href="#/" class="borderl">收信</a></li>
+                    <li><a href="#/links">联系人</a></li>
+                    <li><a href="#/">收件箱</a></li>
+                    <li><a href="#/sendbox/">发件箱</a></li>
+                    <li><a href="#/wait">草稿箱</a></li>
+                    <li><a href="#/wait">订阅邮件</a></li>
+                    <li><a href="#/wait">垃圾箱</a></li>
+                </ul>
+            </div>
+            <div class="right" ng-view>
+            </div>
+        </div>
+    </div>
+
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+
+<script src="http://apps.bdimg.com/libs/angular.js/1.2.8/angular-route.min.js"></script>
+
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="layui/layui.js" charset="UTF-8"></script>
+
+</body>
+</html>
